@@ -11,7 +11,7 @@ function emailSubmit (event){
    emailInput.value ="";
    if((email.includes("@"))===false)
    {alertBox.innerHTML = `이메일을 입력해주세요`} else{alert(`${email}`)}
-
+if((email.includes("@"))===true){
    $.ajax({
     type: 'POST',
     url: '/subscribe',
@@ -20,7 +20,7 @@ function emailSubmit (event){
         alert(response['msg'])
     }
 })
-}
+}}
 
 inputForm.addEventListener("submit",emailSubmit)
 
