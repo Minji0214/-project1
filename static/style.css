@@ -1,0 +1,86 @@
+body {
+    width:  1440px;
+    height: 1024px;
+    font-size: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 300;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo {
+   width: 117px;
+    height: 33px;
+}
+.logo > img {
+    width: 117px;
+    height: 33px;
+}
+
+.greeting{
+    margin: 10px;
+}
+span {
+    margin-left: 5px;
+}
+.big-img {
+
+}
+.big-img > img {
+    width: 663px;
+    height: 397px;
+    margin: 30px;
+}
+.color-gray{
+    color: hsl(0, 0%, 59%);
+}
+.style-bold{
+    font-style: normal;
+    font-weight: 700;
+}
+.notice{
+    font-style: normal;
+    font-weight: 600;
+}
+
+input {
+
+    border-radius:15px;
+    color: hsl(0, 0%, 59%);
+    border-color: hsl(223, 87%, 63%);
+
+}
+
+button{
+    border-radius: 15px;
+    border-style: unset;
+    background-color: hsl(223, 87%, 63%);
+    color: white
+}
+
+button:hover{
+    background-color: hsl(209, 33%, 12%);
+}
+
+.fa-facebook {
+ color:hsl(223, 87%, 63%) ;
+}
+
+.fa-twitter {
+    color:hsl(223, 87%, 63%) ;
+   }
+
+   .fa-instagram {
+    color:hsl(223, 87%, 63%) ;
+   }
+   .alertemail {
+       color: tomato;
+       font-size: 5px;
+   }
+   #facebook :hover {
+       color: black;
+   }
