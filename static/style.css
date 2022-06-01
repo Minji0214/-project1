@@ -1,101 +1,106 @@
 body {
-    width:  1440px;
+    max-width: 1440px;
     height: 1024px;
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
 }
-.container{
+.container {
     height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    margin: auto;
 }
 .logo > img {
     width: 75px;
-    height: 21px;
+    margin-left: 27px;
+
 }
 .logo {
     width: 117px;
     height: 33px;
 }
 
-.greeting{
-    margin: 10px;
+.greeting {
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 40px;
 }
-.notice{
-    margin-bottom: 10px;
+.notice {
+    margin-bottom: 20px;
 }
 span {
     margin-left: 5px;
 }
-.big-img {
+form {
+    display: table-column-group;
+}
 
+ img {
+    width: 50%;
+    margin: 50px;
 }
-.big-img > img {
-    width: 663px;
-    height: 397px;
-    margin: 30px;
-}
-.color-gray{
+.color-gray {
     color: hsl(0, 0%, 59%);
 }
-.style-bold{
+.style-bold {
     font-style: normal;
     font-weight: 900;
+    font-family: 'Libre Franklin', sans-serif;
 }
-.notice{
+.notice {
     font-style: normal;
-    font-weight: 600;
     font-size: 17px;
 }
-input-box{
+input-box {
     margin-top: 25px;
 }
 
 input {
 
-    border-radius:100px;
+    border-radius: 100px;
     color: hsl(223, 87%, 63%);
-    border-color: hsl(223, 87%, 63%);
-    width: 260px;
+    border-color: hsl(0, 0%, 59%);
+    width: 300px;
     height: 34px;
-    
+
 }
 
-button{
+button {
     border-radius: 100px;
     border-style: unset;
     background-color: hsl(223, 87%, 63%);
     color: white;
-    height : 34px;
-    width : 108px;
-    box-shadow: 1px 1px 1px 1px gray
-    font-size: 12px
+    height: 34px;
+    width: 125px;
+    box-shadow: 1px 1px 1px 1px  hsl(223, 100%, 88%);
+    color: white;
+    font-size: 12px;
 }
 
-button:hover{
+button:hover {
     background-color: hsl(209, 33%, 12%);
 }
 
-.fa-facebook {
- color:hsl(223, 87%, 63%) ;
+i {
+    color: hsl(223, 87%, 63%);
 }
-
-.fa-twitter {
-    color:hsl(223, 87%, 63%) ;
-   }
-
-   .fa-instagram {
-    color:hsl(223, 87%, 63%) ;
-   }
-   .alertemail {
-       color: tomato;
-       font-size: 5px;
-   }
-   #facebook :hover {
-       color: black;
-   }
-  
+.sns {
+    margin-bottom: 20px;
+}
+.sns> span{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-color:  hsl(0, 0%, 59%);
+}
+.alertemail {
+    color: tomato;
+    font-size: 5px;
+}
+.copyright{
+    font-size: 10px;
+}
