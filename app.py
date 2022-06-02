@@ -14,4 +14,6 @@ def email_post():
     email_receive = request.form['email_give']
     doc = {'email' : email_receive}
     db.email.insert_one(doc)
-    return jsonify({'msg':'이메일이 저장되었습니다!'})
+    return jsonify({'msg':'구독되었습니다.!'})
+
+

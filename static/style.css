@@ -14,12 +14,15 @@ body {
 }
 .logo > img {
     width: 75px;
-    margin-left: 27px;
+    
 
 }
-.logo {
-    width: 117px;
+header {
+    max-width: 117px;
     height: 33px;
+    display: flex;
+    align-items: center;
+    margin: auto;
 }
 
 .greeting {
@@ -38,7 +41,7 @@ form {
 }
 
  img {
-    width: 50%;
+    width: 47%;
     margin: 50px;
 }
 .color-gray {

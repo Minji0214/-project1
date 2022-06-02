@@ -7,12 +7,7 @@ function emailSubmit(event) {
     event.preventDefault();
     const email = emailInput.value;
     emailInput.value = "";
-    if ((email.includes("@")) === false) {
-        colorChange()
-    } else {
-        alert(`${email}`)
-    }
-    if ((email.includes("@")) === true) {
+    if (email.includes("@")) {
         $.ajax({
             type: 'POST',
             url: '/subscribe',
@@ -23,6 +18,8 @@ function emailSubmit(event) {
                 alert(response['msg'])
             }
         })
+    } else {
+        colorChange()
     }
 }
 
