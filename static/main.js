@@ -1,12 +1,10 @@
 const emailInput = document.querySelector('.email');
 const alertBox = document.querySelector('.alertemail');
 const inputForm = document.querySelector('.input-box')
-const btn = document.querySelector('.btn')
 
 function emailSubmit(event) {
     event.preventDefault();
     const email = emailInput.value;
-    emailInput.value = "";
     if (email.includes("@")) {
         $.ajax({
             type: 'POST',
@@ -17,15 +15,21 @@ function emailSubmit(event) {
             success: function (response) {
                 alert(response['msg'])
             }
-        })
-    } else {
-        colorChange()
-    }
+        });
+        emailInput.value = "";
+    } else if(emailInput.value === '') {
+        blankValidation();
+    } else {errorValidation()}
 }
 
 inputForm.addEventListener("submit", emailSubmit)
 
-function colorChange() {
+function blankValidation() {
     emailInput.style.borderColor = "tomato";
     alertBox.innerHTML = `이메일을 입력해주세요`;
+}
+function errorValidation() {
+    emailInput.style.borderColor = "tomato";
+    alertBox.innerHTML = `이메일 양식에 맞게 입력해주세요`;
+    emailInput.value = "";
 }
